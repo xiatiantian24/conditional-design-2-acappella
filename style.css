@@ -1,8 +1,11 @@
-+html, body {
+html, body {
   margin: 0;
   padding: 0;
 }
 
+* {
+  font-family: 'Cabin', sans-serif;
+}
 
 /* canvas {
   display: block;
@@ -32,8 +35,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(0,0,0,0.8);
-        padding: 20px;
+        background: rgba(45,45,45,0.98);
+        padding: 50px 20px;
   width: 400px;
   height: 250px;
   border-radius: 20px;
@@ -58,28 +61,40 @@
 
 
  body {
-            background-color: hsl(0,0%,20%);
+            background-color: #252525;
             text-align: center;
-  }
+   
+}
 
 h1 {
-        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-   font-weight: 600;
    color: #ffffff;
 }
 
 h2 {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
    font-weight: 600;
  font-size: 22px;
   margin-bottom: 10px;
+}
+
+h3 {
+font-weight: 400;
+ font-size: 17px;
+  margin-top: 0;
+     color: #eeeeee;
+}
+
+a {
+  font-weight: 400;
+ font-size: 17px;
+  margin-top: 0;
+     color: #eeeeee;
 }
 
 button {
     background-color: #eeeeee;
     border: none;
     color: rgb(64,64,64);
-    padding: 10px 20px;
+    padding:10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

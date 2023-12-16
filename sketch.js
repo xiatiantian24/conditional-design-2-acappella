@@ -33,8 +33,8 @@ let state = 0;
 
 
 // Text to display
-let overlayText = "Turn up your sound and \ntouch any stickers to play";
-let overlayText2 = "Pet with multiple parts of \nyour body to let them sing at \nthe same time";
+let overlayText = "Turn up your camera & sound \nand wave your arms to play";
+let overlayText2 = "Pet with multiple parts of \nyour body to let them sing together";
 
 let scaleFactor = 1.5
 
