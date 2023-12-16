@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
     <script src="path/to/p5.sound.js"></script>
-  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.js"></script> -->
-    <script src="https://kit.fontawesome.com/13b2e54b46.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+    <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/13b2e54b46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8" />
-
   </head>
   <body>
     <main>
       <h1>Pet and Listen to Acapella by Your Animal Friends</h1>
-      <h3>Music credit to <a href="https://www.incredibox.com/demo/" target="_blank">www.incredibox.com</a></h3>
+      <h3>
+        Music credit to
+        <a href="https://www.incredibox.com/demo/" target="_blank"
+          >www.incredibox.com</a
+        >
+      </h3>
 
- <div id="videoContainer">
-   <button id="restartButton">Start Over</button>
-   
-   <button id="instructionsButton"><i class="fa fa-question-circle" aria-hidden="true"></i>    Help</button>
-        <!-- Add a div to contain the game instructions (initially hidden) -->
-        <div id="instructionsPopup" style="display: none;">
-          <h2>Instructions</h2>
-          <p>1) Turn on your camera and sound.</p>
-          <p>2) Wave your hands. Your animal friend will start to sing when you pet them.</p>
-          <p>3) Try using your head, knees, or feet to let them sing together!</p>
-          <!-- Add more instructions as needed -->
-          <div id="closeButtonContainer">
-            <button id="closeButton">Close</button>
-          </div>       
+      <div id="videoContainer">
+        <div id="button-wrap">
+          <button id="restartButton">Start Over</button>
+
+          <button id="instructionsButton">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> Help
+          </button>
+          <!-- Add a div to contain the game instructions (initially hidden) -->
+          <div id="instructionsPopup" style="display: none">
+            <h2>Instructions</h2>
+            <p>1) Turn on your camera and sound.</p>
+            <p>
+              2) Wave your hands. Your animal friend will start to sing when you
+              pet them.
+            </p>
+            <p>
+              3) Try using your head, knees, or feet to let them sing together!
+            </p>
+            <!-- Add more instructions as needed -->
+            <div id="closeButtonContainer">
+              <button id="closeButton">Close</button>
+            </div>
+          </div>
+          <br />
+          <button id="recordButton" class="coming_soon">
+            Coming Soon: <br />Record Audio
+          </button>
+          <button id="switchSongs" class="coming_soon">
+            Coming Soon: <br />Switch Songs
+          </button>
         </div>
-   <br>
-     <button id="recordButton" class="coming_soon">Coming Soon: <br>Record Audio</button>
-    <button id="switchSongs" class="coming_soon">Coming Soon: <br>Switch Songs</button>
-    <canvas id="videoCanvas"></canvas>
-  </div>
+        <canvas id="videoCanvas"></canvas>
+      </div>
     </main>
     <script src="sketch.js"></script>
   </body>
