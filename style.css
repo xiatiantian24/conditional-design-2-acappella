@@ -36,7 +36,7 @@ html, body {
         left: 50%;
         transform: translate(-50%, -50%);
         background: rgba(45,45,45,0.98);
-        padding: 50px 20px;
+        padding: 20px 50px 80px 50px;
   width: 400px;
   height: 250px;
   border-radius: 20px;
@@ -52,6 +52,8 @@ html, body {
 #closeButtonContainer {
         margin-top: 20px;
         width: 100%;
+  position:relative;
+  left: 35%;
       }
 
       #closeButton {
