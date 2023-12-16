@@ -92,8 +92,8 @@ a {
 button {
   background-color: #eeeeee;
   border: none;
-  color: rgb(64, 64, 64);
-  padding: 10px 15px;
+  color: #404040;
+  padding: 10px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -118,4 +118,6 @@ button:hover {
   position: fixed;
   top: 50px;
   right: 20px;
+  display: flex;
+  flex-direction: column;
 }
